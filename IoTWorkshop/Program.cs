@@ -27,11 +27,11 @@ namespace IoTWorkshop
             consumerService.ConnectionString = "Endpoint=sb://ihsuprodsgres009dednamespace.servicebus.windows.net/;SharedAccessKeyName=iothubowner;SharedAccessKey=hiRM8r03Rft7ktHfJwxstcMIzJRhiPYrEEj9LqiPkqE=";
             consumerService.IotHubD2cEndpoint = "iothub-ehub-honeywelli-290394-7d2e12a167";
             consumerService.Name = "Consumer1";
-            consumerService.Offset = "10";
+           // consumerService.Offset = "10";
             consumerService.Init();
 
             consumerService.ReceiveMessages();
-            
+            /*
             ConsumerService consumerService5 = new ConsumerService();
             consumerService5.ConnectionString = "Endpoint=sb://ihsuprodsgres009dednamespace.servicebus.windows.net/;SharedAccessKeyName=iothubowner;SharedAccessKey=hiRM8r03Rft7ktHfJwxstcMIzJRhiPYrEEj9LqiPkqE=";
             consumerService5.IotHubD2cEndpoint = "iothub-ehub-honeywelli-290394-7d2e12a167";
@@ -82,7 +82,7 @@ namespace IoTWorkshop
 
             consumerService3.Init();
             consumerService3.ReceiveMessages();
-
+            */
         }
 
         static void Main(string[] args)
@@ -99,7 +99,7 @@ namespace IoTWorkshop
             
             //SimulateDevices();
 
-
+            /*
             ServiceManager serviceManager = new ServiceManager();
             //use IoTHub connection string, NOT device one
             serviceManager.ConnectionString = "HostName=HoneywellIotHub.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=hiRM8r03Rft7ktHfJwxstcMIzJRhiPYrEEj9LqiPkqE=";
@@ -111,7 +111,7 @@ namespace IoTWorkshop
             //Thread.Sleep(5000);
 
             serviceManager.resetTotal("cb1");
-
+            */
 
             CombinerBox cb = new CombinerBox();
             cb.HostName = "HoneywellIotHub.azure-devices.net";
